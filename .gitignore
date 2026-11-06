@@ -22,8 +22,9 @@ vector_store/
 # ---- Logs ----
 logs/
 
-# ---- Reports (generated output — regenerate from code) ----
-reports/
+# ---- Reports (generated data reports ignored; markdown reports tracked) ----
+reports/*
+!reports/*.md
 
 # ---- Testing & coverage ----
 .pytest_cache/
