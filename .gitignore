@@ -1,0 +1,41 @@
+# ---- Python virtualenv & cache ----
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ---- Secrets — NEVER commit these ----
+.env
+
+# ---- Data — PDFs are large and not version-controlled ----
+data/pdfs/
+data/processed/
+
+# ---- Vector store (can be large) ----
+vector_store/
+
+# ---- Logs ----
+logs/
+
+# ---- Reports (generated output — regenerate from code) ----
+reports/
+
+# ---- Testing & coverage ----
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ---- macOS ----
+.DS_Store
+
+# ---- IDEs ----
+.idea/
+.vscode/
+*.swp
+*.swo
