@@ -526,4 +526,3 @@ no separate Qdrant service or API key is required.
 - **No frontend.** This is a retrieval pipeline, not a web application.
 - **No answer generation.** PolicyLens retrieves passages; it does not generate answers.
 - **Relative paths only.** The project is portable across machines.
-# Policy_lense
