@@ -37,6 +37,7 @@ QUESTIONS_PATH  = EVAL_DIR / "questions.csv"
 # ---------------------------------------------------------------------------
 CHUNK_MIN_TOKENS: int = int(os.getenv("CHUNK_MIN_TOKENS", "300"))
 CHUNK_MAX_TOKENS: int = int(os.getenv("CHUNK_MAX_TOKENS", "800"))
+CHUNK_TARGET_TOKENS: int = int(os.getenv("CHUNK_TARGET_TOKENS", "500"))
 CHUNK_OVERLAP_TOKENS: int = int(os.getenv("CHUNK_OVERLAP_TOKENS", "50"))
 
 # Chunking strategy: "fixed" | "structure_aware"
@@ -52,14 +53,25 @@ EMBEDDING_MODEL: str = os.getenv(
 # ---------------------------------------------------------------------------
 # Vector store settings
 # ---------------------------------------------------------------------------
-VECTOR_STORE_BACKEND: str = os.getenv("VECTOR_STORE_BACKEND", "chromadb")
-CHROMA_COLLECTION_NAME: str = os.getenv("CHROMA_COLLECTION_NAME", "policy_chunks")
+VECTOR_STORE_BACKEND: str = os.getenv("VECTOR_STORE_BACKEND", "qdrant")
+QDRANT_STORAGE_DIR = Path(
+    os.getenv("QDRANT_STORAGE_DIR", str(VECTOR_STORE_DIR / "qdrant_local"))
+)
+QDRANT_FIXED_COLLECTION_NAME: str = os.getenv(
+    "QDRANT_FIXED_COLLECTION_NAME", "policylens_fixed_size_bge_m3"
+)
+QDRANT_STRUCTURE_COLLECTION_NAME: str = os.getenv(
+    "QDRANT_STRUCTURE_COLLECTION_NAME", "policylens_structure_aware_bge_m3"
+)
 
 # ---------------------------------------------------------------------------
 # OCR settings
 # ---------------------------------------------------------------------------
 TESSERACT_CMD: str = os.getenv("TESSERACT_CMD", "tesseract")  # path or command name
 OCR_LANGUAGE: str = os.getenv("OCR_LANGUAGE", "eng")
+OCR_DPI: int = int(os.getenv("OCR_DPI", "300"))
+OCR_TIMEOUT_SECONDS: int = int(os.getenv("OCR_TIMEOUT_SECONDS", "180"))
+OCR_PAGE_SEGMENTATION_MODE: int = int(os.getenv("OCR_PAGE_SEGMENTATION_MODE", "3"))
 
 # ---------------------------------------------------------------------------
 # Retrieval / evaluation settings

@@ -1,0 +1,4611 @@
+{
+  "purpose": "Read-only diagnostic search beyond the official Milestone 2B.16 top-10 evaluation; not used in official metrics.",
+  "query_count": 10,
+  "unique_query_embeddings": 5,
+  "top_k": 20,
+  "filters": null,
+  "embedding_model": "BAAI/bge-m3",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "embedding_dimensions": 1024,
+  "same_query_vector_reused_for_both_strategies": true,
+  "collection_inventory_before": {
+    "fixed_size": {
+      "collection": "policylens_fixed_size_bge_m3",
+      "points": 1370,
+      "dimensions": 1024,
+      "distance": "Cosine",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    },
+    "structure_aware": {
+      "collection": "policylens_structure_aware_bge_m3",
+      "points": 1478,
+      "dimensions": 1024,
+      "distance": "Cosine",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    }
+  },
+  "collection_inventory_after": {
+    "fixed_size": {
+      "collection": "policylens_fixed_size_bge_m3",
+      "points": 1370,
+      "dimensions": 1024,
+      "distance": "Cosine",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    },
+    "structure_aware": {
+      "collection": "policylens_structure_aware_bge_m3",
+      "points": 1478,
+      "dimensions": 1024,
+      "distance": "Cosine",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    }
+  },
+  "results": [
+    {
+      "question_id": "Q003",
+      "question_type": "standard",
+      "question": "In what language must borrower communications be provided under this fair-practice code?",
+      "gold_references": [
+        {
+          "doc_id": "doc_001",
+          "title": "Fair Practice Code (Version 7.1)",
+          "issuer": "Bajaj Finance Limited",
+          "gold_pages": [
+            4
+          ],
+          "pdf_page_indices": [
+            3
+          ],
+          "printed_page_numbers": [],
+          "section_title": "4. Applications for loans and their processing",
+          "evidence_snippet": "All communications to the borrower shall be in the vernacular language or a language as understood by the borrower.",
+          "reference_notes": "The page gives the borrower's language comprehension as the alternative to the vernacular."
+        }
+      ],
+      "strategies": [
+        {
+          "strategy": "fixed_size",
+          "collection": "policylens_fixed_size_bge_m3",
+          "gold_ranks": [
+            7,
+            8,
+            14
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_001_fixed_size_00012_9e002cf96917",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6826768565417787,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_017_fixed_size_00001_946e3cd3c75e",
+              "doc_id": "doc_017",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6808709357367883,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_001_fixed_size_00011_be30ce0d52cd",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6538330043658896,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_002_fixed_size_00001_0ce787c7f04d",
+              "doc_id": "doc_002",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6535784030647342,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_003_fixed_size_00023_a8eb1773a020",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 19,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 19,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6451673382596971,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_003_fixed_size_00002_8432983a1d35",
+              "doc_id": "doc_003",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6442245398678519,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_001_fixed_size_00003_0bf6f42069fa",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6296972866391434,
+              "gold_page_match": true
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_001_fixed_size_00001_aee405d33739",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6206239356719991,
+              "gold_page_match": true
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_024_fixed_size_00002_15bb2fdc5f67",
+              "doc_id": "doc_024",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.617220138458157,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_016_fixed_size_00001_3e76161d41b6",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6106150940021253,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_024_fixed_size_00004_e6145695ee32",
+              "doc_id": "doc_024",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6071147455167554,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_024_fixed_size_00005_23b340ab4a76",
+              "doc_id": "doc_024",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5941938502071944,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_016_fixed_size_00002_aac99a7d19b5",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5849202683381093,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_001_fixed_size_00004_785fedf70295",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5836787381350338,
+              "gold_page_match": true
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_002_fixed_size_00002_e8bfbf070883",
+              "doc_id": "doc_002",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5834131185514151,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_016_fixed_size_00003_d1e3de271923",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5804983620524442,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_003_fixed_size_00004_680ae88b0fb3",
+              "doc_id": "doc_003",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5724362477038545,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_036_fixed_size_00519_1fd59142f219",
+              "doc_id": "doc_036",
+              "page_start": 297,
+              "page_end": 297,
+              "page_provenance": [
+                {
+                  "page_number": 297,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5698998326771132,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_002_fixed_size_00003_70491da42bd6",
+              "doc_id": "doc_002",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5656102645161089,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_003_fixed_size_00022_472ad6c21cae",
+              "doc_id": "doc_003",
+              "page_start": 17,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 17,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5632850154921691,
+              "gold_page_match": false
+            }
+          ]
+        },
+        {
+          "strategy": "structure_aware",
+          "collection": "policylens_structure_aware_bge_m3",
+          "gold_ranks": [
+            4,
+            12
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_017_structure_aware_00001_b6c99a8248e5",
+              "doc_id": "doc_017",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6792672674926399,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_001_structure_aware_00012_ec295e9f73ee",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6596435324191868,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_003_structure_aware_00002_964c980ead5b",
+              "doc_id": "doc_003",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6408285690435437,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_001_structure_aware_00003_ad7599361f91",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6338201782720294,
+              "gold_page_match": true
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_003_structure_aware_00026_37c96e1037b3",
+              "doc_id": "doc_003",
+              "page_start": 19,
+              "page_end": 19,
+              "page_provenance": [
+                {
+                  "page_number": 19,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6312897344832868,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_002_structure_aware_00001_88177c0a5460",
+              "doc_id": "doc_002",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6306901814906305,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_001_structure_aware_00011_6d21474d762a",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6205416034918071,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_024_structure_aware_00002_c7c2c87cf73a",
+              "doc_id": "doc_024",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6191117865001937,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_017_structure_aware_00005_0bd16c3e8443",
+              "doc_id": "doc_017",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6174735754246816,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_001_structure_aware_00001_ac782e3816d0",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6172787303190223,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_016_structure_aware_00001_465ed38df1ef",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6118820451909568,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_001_structure_aware_00004_288632361e39",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6096097577437594,
+              "gold_page_match": true
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_003_structure_aware_00024_bade9ea5b27c",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6011654127797059,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_003_structure_aware_00005_a9d262541873",
+              "doc_id": "doc_003",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5919785883078719,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_002_structure_aware_00003_b5b2ec7e1909",
+              "doc_id": "doc_002",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5810746513784586,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_003_structure_aware_00025_d428b7fb4154",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5805716908296994,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_002_structure_aware_00002_6fcde47d0801",
+              "doc_id": "doc_002",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5801136333103544,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_024_structure_aware_00003_c9a35a031d1e",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5789611300657606,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_016_structure_aware_00002_1cf9097c9fc7",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5781045418549566,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_024_structure_aware_00005_ad192a5e6e82",
+              "doc_id": "doc_024",
+              "page_start": 4,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5743264518672354,
+              "gold_page_match": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "question_type": "standard",
+      "question": "What key loan information must Bajaj Finance convey in writing when a loan is sanctioned?",
+      "gold_references": [
+        {
+          "doc_id": "doc_001",
+          "title": "Fair Practice Code (Version 7.1)",
+          "issuer": "Bajaj Finance Limited",
+          "gold_pages": [
+            4
+          ],
+          "pdf_page_indices": [
+            3
+          ],
+          "printed_page_numbers": [],
+          "section_title": "5. Loan appraisal and terms/conditions",
+          "evidence_snippet": "The Company will convey in writing to the borrower in the vernacular language by means of sanction letter or otherwise, the amount of loan sanctioned along with the terms and conditions including annualised rate of interest and method of application thereof",
+          "reference_notes": "This supports the sanctioned amount, terms, annualised rate, and rate-application method."
+        }
+      ],
+      "strategies": [
+        {
+          "strategy": "fixed_size",
+          "collection": "policylens_fixed_size_bge_m3",
+          "gold_ranks": [
+            1,
+            4,
+            10
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_001_fixed_size_00001_aee405d33739",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6414268714283881,
+              "gold_page_match": true
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_003_fixed_size_00006_8bf99111838c",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6056455357554892,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_002_fixed_size_00002_e8bfbf070883",
+              "doc_id": "doc_002",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5997524568860853,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_001_fixed_size_00003_0bf6f42069fa",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5965575452399523,
+              "gold_page_match": true
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_016_fixed_size_00002_aac99a7d19b5",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.59523962530149,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_017_fixed_size_00002_133d2e3c2a08",
+              "doc_id": "doc_017",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5935122670510597,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_003_fixed_size_00005_96b0d302eff6",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5823955425737934,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_016_fixed_size_00003_d1e3de271923",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5800621325727129,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_001_fixed_size_00011_be30ce0d52cd",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5750308497001634,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_001_fixed_size_00004_785fedf70295",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5704446619756675,
+              "gold_page_match": true
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_016_fixed_size_00005_92e15d19bd51",
+              "doc_id": "doc_016",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5654315825687515,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_003_fixed_size_00023_a8eb1773a020",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 19,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 19,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5619303229308198,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_003_fixed_size_00022_472ad6c21cae",
+              "doc_id": "doc_003",
+              "page_start": 17,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 17,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5592089825892945,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_001_fixed_size_00010_11f6c82db1cd",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5577870325162914,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_002_fixed_size_00003_70491da42bd6",
+              "doc_id": "doc_002",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5470563062597342,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_024_fixed_size_00003_cb861a2996e0",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5440744186148444,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_034_fixed_size_00004_d1c1740e1e3e",
+              "doc_id": "doc_034",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5428143187321252,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_017_fixed_size_00005_af2364eab796",
+              "doc_id": "doc_017",
+              "page_start": 4,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5411957601872149,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_003_fixed_size_00011_ddcd85c88a64",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.540660903474177,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_017_fixed_size_00001_946e3cd3c75e",
+              "doc_id": "doc_017",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5377264079372278,
+              "gold_page_match": false
+            }
+          ]
+        },
+        {
+          "strategy": "structure_aware",
+          "collection": "policylens_structure_aware_bge_m3",
+          "gold_ranks": [
+            7,
+            8
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_001_structure_aware_00001_ac782e3816d0",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.636482623697694,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_016_structure_aware_00003_6a9423992e87",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6088723568047951,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_003_structure_aware_00024_bade9ea5b27c",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.602972234236407,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_003_structure_aware_00006_f9c845e0a416",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6010883575542644,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_002_structure_aware_00002_6fcde47d0801",
+              "doc_id": "doc_002",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.591059387310672,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_003_structure_aware_00025_d428b7fb4154",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.585898387204731,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_001_structure_aware_00003_ad7599361f91",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5751227880341134,
+              "gold_page_match": true
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_001_structure_aware_00004_288632361e39",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5711605365723429,
+              "gold_page_match": true
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_017_structure_aware_00002_04f701b2503e",
+              "doc_id": "doc_017",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.570935750374127,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_001_structure_aware_00010_a2e7e73908b4",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5657346219722355,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_001_structure_aware_00012_ec295e9f73ee",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5559939969096792,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_034_structure_aware_00010_903a1e07dfff",
+              "doc_id": "doc_034",
+              "page_start": 7,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5536985083221413,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_001_structure_aware_00011_6d21474d762a",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5530814468474416,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_016_structure_aware_00004_15199cc67fa1",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5524044925908633,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_034_structure_aware_00004_f1c0a6bed240",
+              "doc_id": "doc_034",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5498212948756422,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_017_structure_aware_00003_d48a51798b10",
+              "doc_id": "doc_017",
+              "page_start": 2,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5480434975161045,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_036_structure_aware_00274_bfb037f99c9b",
+              "doc_id": "doc_036",
+              "page_start": 146,
+              "page_end": 146,
+              "page_provenance": [
+                {
+                  "page_number": 146,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5468812348505969,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_003_structure_aware_00008_cc0472e72e33",
+              "doc_id": "doc_003",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5448010065883029,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_002_structure_aware_00003_b5b2ec7e1909",
+              "doc_id": "doc_002",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5382027676480713,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_003_structure_aware_00005_a9d262541873",
+              "doc_id": "doc_003",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5379216415531416,
+              "gold_page_match": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "question_type": "standard",
+      "question": "Where must penal charges for late repayment or another borrower default be highlighted?",
+      "gold_references": [
+        {
+          "doc_id": "doc_001",
+          "title": "Fair Practice Code (Version 7.1)",
+          "issuer": "Bajaj Finance Limited",
+          "gold_pages": [
+            4
+          ],
+          "pdf_page_indices": [
+            3
+          ],
+          "printed_page_numbers": [],
+          "section_title": "6. Penal Charges in Loan Accounts",
+          "evidence_snippet": "The Company will mention the penal charge which will be charged for late repayment and / or any other default on the part of the customer, in bold in the loan agreement.",
+          "reference_notes": "The code specifies the loan agreement and bold presentation."
+        }
+      ],
+      "strategies": [
+        {
+          "strategy": "fixed_size",
+          "collection": "policylens_fixed_size_bge_m3",
+          "gold_ranks": [
+            5,
+            19
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_003_fixed_size_00009_9ea212f40ba8",
+              "doc_id": "doc_003",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6770734901965583,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_003_fixed_size_00010_4ff1c825b1d8",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6683754797855952,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_003_fixed_size_00006_8bf99111838c",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.656297111391108,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_030_fixed_size_00022_2f233cbb6f1f",
+              "doc_id": "doc_030",
+              "page_start": 14,
+              "page_end": 15,
+              "page_provenance": [
+                {
+                  "page_number": 14,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6394843890999004,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_001_fixed_size_00004_785fedf70295",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.625527606626901,
+              "gold_page_match": true
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_003_fixed_size_00005_96b0d302eff6",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6252833286749678,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_016_fixed_size_00003_d1e3de271923",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6224012351474351,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_007_fixed_size_00015_460b98b4d591",
+              "doc_id": "doc_007",
+              "page_start": 11,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6213641940174798,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_036_fixed_size_00478_68530ab3dc39",
+              "doc_id": "doc_036",
+              "page_start": 276,
+              "page_end": 276,
+              "page_provenance": [
+                {
+                  "page_number": 276,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6198496658427309,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_003_fixed_size_00011_ddcd85c88a64",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6193390450926517,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_024_fixed_size_00003_cb861a2996e0",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6110572309052039,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_030_fixed_size_00023_cfa8118dec10",
+              "doc_id": "doc_030",
+              "page_start": 15,
+              "page_end": 16,
+              "page_provenance": [
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 16,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6077712264265391,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_001_fixed_size_00008_f643700e17c3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6055749040799251,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_030_fixed_size_00024_4012ae813451",
+              "doc_id": "doc_030",
+              "page_start": 16,
+              "page_end": 16,
+              "page_provenance": [
+                {
+                  "page_number": 16,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5954510210926449,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_016_fixed_size_00006_5707a2baee10",
+              "doc_id": "doc_016",
+              "page_start": 5,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5935090571825896,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_006_fixed_size_00178_01ed96333251",
+              "doc_id": "doc_006",
+              "page_start": 58,
+              "page_end": 60,
+              "page_provenance": [
+                {
+                  "page_number": 58,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 59,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 60,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5896022686702511,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_001_fixed_size_00006_333074536207",
+              "doc_id": "doc_001",
+              "page_start": 6,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5881390879563533,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_030_fixed_size_00021_7a07a97d4bc9",
+              "doc_id": "doc_030",
+              "page_start": 14,
+              "page_end": 15,
+              "page_provenance": [
+                {
+                  "page_number": 14,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5838659898145663,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_001_fixed_size_00003_0bf6f42069fa",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5836883184367057,
+              "gold_page_match": true
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_003_fixed_size_00019_572657b7cb2e",
+              "doc_id": "doc_003",
+              "page_start": 15,
+              "page_end": 16,
+              "page_provenance": [
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 16,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5830415879075007,
+              "gold_page_match": false
+            }
+          ]
+        },
+        {
+          "strategy": "structure_aware",
+          "collection": "policylens_structure_aware_bge_m3",
+          "gold_ranks": [
+            6,
+            17
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_030_structure_aware_00026_4fae216b60fb",
+              "doc_id": "doc_030",
+              "page_start": 15,
+              "page_end": 15,
+              "page_provenance": [
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6433947633146122,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_003_structure_aware_00010_123adaacaf82",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6374374572074992,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_003_structure_aware_00009_67a44167a09d",
+              "doc_id": "doc_003",
+              "page_start": 7,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6351231362733394,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_003_structure_aware_00011_29d3d9758f06",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6281254963104776,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_036_structure_aware_00508_3088076acb2a",
+              "doc_id": "doc_036",
+              "page_start": 276,
+              "page_end": 276,
+              "page_provenance": [
+                {
+                  "page_number": 276,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6198496658427309,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_001_structure_aware_00004_288632361e39",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6143923538011807,
+              "gold_page_match": true
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_024_structure_aware_00003_c9a35a031d1e",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6110625822735831,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_007_structure_aware_00016_9f103d6ed24f",
+              "doc_id": "doc_007",
+              "page_start": 11,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6047200215594367,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_001_structure_aware_00008_bd57eceffcf3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5973979149587042,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_030_structure_aware_00028_1d7e604d17a3",
+              "doc_id": "doc_030",
+              "page_start": 16,
+              "page_end": 16,
+              "page_provenance": [
+                {
+                  "page_number": 16,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5970639055495978,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_003_structure_aware_00006_f9c845e0a416",
+              "doc_id": "doc_003",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5958303055403371,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_030_structure_aware_00027_5ffa2fa2aa91",
+              "doc_id": "doc_030",
+              "page_start": 15,
+              "page_end": 15,
+              "page_provenance": [
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5857013322457607,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_003_structure_aware_00020_f5717949c8d6",
+              "doc_id": "doc_003",
+              "page_start": 15,
+              "page_end": 16,
+              "page_provenance": [
+                {
+                  "page_number": 15,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 16,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5847273252978624,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_030_structure_aware_00024_182be4d4cd64",
+              "doc_id": "doc_030",
+              "page_start": 14,
+              "page_end": 14,
+              "page_provenance": [
+                {
+                  "page_number": 14,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5834752344453992,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_003_structure_aware_00005_a9d262541873",
+              "doc_id": "doc_003",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5819777606334322,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_036_structure_aware_00546_f8c17b95848d",
+              "doc_id": "doc_036",
+              "page_start": 295,
+              "page_end": 295,
+              "page_provenance": [
+                {
+                  "page_number": 295,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5809413209228604,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_001_structure_aware_00003_ad7599361f91",
+              "doc_id": "doc_001",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5777148427046791,
+              "gold_page_match": true
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_006_structure_aware_00187_c2d66858929f",
+              "doc_id": "doc_006",
+              "page_start": 57,
+              "page_end": 60,
+              "page_provenance": [
+                {
+                  "page_number": 57,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 58,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 59,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 60,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5734613963479073,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_001_structure_aware_00005_33a0e3812a93",
+              "doc_id": "doc_001",
+              "page_start": 5,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5717290899353161,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_001_structure_aware_00007_0c1f6297db2c",
+              "doc_id": "doc_001",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                }
+              ],
+              "score": 0.5712473790390329,
+              "gold_page_match": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "Q010",
+      "question_type": "standard",
+      "question": "Where must Shriram Finance explain how it grades borrower risk and why different rates are charged?",
+      "gold_references": [
+        {
+          "doc_id": "doc_016",
+          "title": "Fair Practice Code 2023",
+          "issuer": "Shriram Finance Limited",
+          "gold_pages": [
+            2
+          ],
+          "pdf_page_indices": [
+            1
+          ],
+          "printed_page_numbers": [],
+          "section_title": "1) Applications for loans and their processing",
+          "evidence_snippet": "The loan application form and the sanction letter issued to the customer shall disclose the approach for gradation of risks and rationale for charging different rates of interest to different categories of borrowers and the same shall also be made available on the web-site of the Company or published in the relevant newspapers.",
+          "reference_notes": "The code names the application form, sanction letter, website, or relevant newspapers as disclosure locations."
+        }
+      ],
+      "strategies": [
+        {
+          "strategy": "fixed_size",
+          "collection": "policylens_fixed_size_bge_m3",
+          "gold_ranks": [],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_016_fixed_size_00001_3e76161d41b6",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6235991838295614,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_016_fixed_size_00007_c0b5bc32280d",
+              "doc_id": "doc_016",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6158664429672492,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_003_fixed_size_00009_9ea212f40ba8",
+              "doc_id": "doc_003",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.60157690291801,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_017_fixed_size_00005_af2364eab796",
+              "doc_id": "doc_017",
+              "page_start": 4,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5801881554195447,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_019_fixed_size_00001_1de3745965b8",
+              "doc_id": "doc_019",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.579184767915657,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_019_fixed_size_00002_3ca472e6746a",
+              "doc_id": "doc_019",
+              "page_start": 1,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.573434412463996,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_001_fixed_size_00004_785fedf70295",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5623054762513988,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_002_fixed_size_00006_5bd2df31feaa",
+              "doc_id": "doc_002",
+              "page_start": 5,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5549194224430538,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_016_fixed_size_00005_92e15d19bd51",
+              "doc_id": "doc_016",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5457068954120767,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_036_fixed_size_00470_ac3a95112f7b",
+              "doc_id": "doc_036",
+              "page_start": 272,
+              "page_end": 272,
+              "page_provenance": [
+                {
+                  "page_number": 272,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5422636957373703,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_024_fixed_size_00003_cb861a2996e0",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5415472523649683,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_036_fixed_size_00478_68530ab3dc39",
+              "doc_id": "doc_036",
+              "page_start": 276,
+              "page_end": 276,
+              "page_provenance": [
+                {
+                  "page_number": 276,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.538785406172536,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_003_fixed_size_00008_f3413e5ba015",
+              "doc_id": "doc_003",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5384349463890381,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_001_fixed_size_00008_f643700e17c3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5382240946456724,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_036_fixed_size_00469_7bd0cd552409",
+              "doc_id": "doc_036",
+              "page_start": 272,
+              "page_end": 272,
+              "page_provenance": [
+                {
+                  "page_number": 272,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5378812572035284,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_003_fixed_size_00012_e9c78e5dfd1c",
+              "doc_id": "doc_003",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5376875427057479,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_001_fixed_size_00011_be30ce0d52cd",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5375456108665245,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_016_fixed_size_00006_5707a2baee10",
+              "doc_id": "doc_016",
+              "page_start": 5,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.535749594093561,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_027_fixed_size_00016_5f452d819caf",
+              "doc_id": "doc_027",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5318556754412054,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_036_fixed_size_00254_9234ea1426dd",
+              "doc_id": "doc_036",
+              "page_start": 145,
+              "page_end": 146,
+              "page_provenance": [
+                {
+                  "page_number": 145,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 146,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5307093552259436,
+              "gold_page_match": false
+            }
+          ]
+        },
+        {
+          "strategy": "structure_aware",
+          "collection": "policylens_structure_aware_bge_m3",
+          "gold_ranks": [
+            18
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_016_structure_aware_00001_465ed38df1ef",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6199457301394503,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_003_structure_aware_00009_67a44167a09d",
+              "doc_id": "doc_003",
+              "page_start": 7,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5842698939001778,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_019_structure_aware_00001_507c2b5dcc86",
+              "doc_id": "doc_019",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5836528122548361,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_001_structure_aware_00004_288632361e39",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5746802640239894,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_024_structure_aware_00003_c9a35a031d1e",
+              "doc_id": "doc_024",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5583879281471357,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_019_structure_aware_00002_7935b8133bc5",
+              "doc_id": "doc_019",
+              "page_start": 1,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.552614221676476,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_027_structure_aware_00016_4763177f33cd",
+              "doc_id": "doc_027",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5471493640625237,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_016_structure_aware_00008_8909da55ae52",
+              "doc_id": "doc_016",
+              "page_start": 6,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5449736734010638,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_002_structure_aware_00006_48025fb0fb9e",
+              "doc_id": "doc_002",
+              "page_start": 6,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5448127268705263,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_036_structure_aware_00500_a5c0331ef4be",
+              "doc_id": "doc_036",
+              "page_start": 272,
+              "page_end": 272,
+              "page_provenance": [
+                {
+                  "page_number": 272,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5422636957373703,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_001_structure_aware_00009_61e17d0cb382",
+              "doc_id": "doc_001",
+              "page_start": 8,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5406565954600508,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_003_structure_aware_00025_d428b7fb4154",
+              "doc_id": "doc_003",
+              "page_start": 18,
+              "page_end": 18,
+              "page_provenance": [
+                {
+                  "page_number": 18,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5399682314406443,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_036_structure_aware_00508_3088076acb2a",
+              "doc_id": "doc_036",
+              "page_start": 276,
+              "page_end": 276,
+              "page_provenance": [
+                {
+                  "page_number": 276,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.538785406172536,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_036_structure_aware_00499_5379903778b0",
+              "doc_id": "doc_036",
+              "page_start": 272,
+              "page_end": 272,
+              "page_provenance": [
+                {
+                  "page_number": 272,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5378812572035284,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_027_structure_aware_00017_313cc64b0b90",
+              "doc_id": "doc_027",
+              "page_start": 11,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5339415579451718,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_003_structure_aware_00011_29d3d9758f06",
+              "doc_id": "doc_003",
+              "page_start": 8,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5325654891393428,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_001_structure_aware_00008_bd57eceffcf3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5313448615316354,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_016_structure_aware_00003_6a9423992e87",
+              "doc_id": "doc_016",
+              "page_start": 2,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5309534635755263,
+              "gold_page_match": true
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_016_structure_aware_00006_d4c341ea43e2",
+              "doc_id": "doc_016",
+              "page_start": 5,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.530316993024899,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_036_structure_aware_00540_0e2f0c506910",
+              "doc_id": "doc_036",
+              "page_start": 292,
+              "page_end": 292,
+              "page_provenance": [
+                {
+                  "page_number": 292,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5301992800414905,
+              "gold_page_match": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "Q011",
+      "question_type": "standard",
+      "question": "What governance duties does Shriram Finance's board have for grievance handling and Fair Practice Code compliance?",
+      "gold_references": [
+        {
+          "doc_id": "doc_016",
+          "title": "Fair Practice Code 2023",
+          "issuer": "Shriram Finance Limited",
+          "gold_pages": [
+            5
+          ],
+          "pdf_page_indices": [
+            4
+          ],
+          "printed_page_numbers": [],
+          "section_title": "6) Responsibility of Board of Directors",
+          "evidence_snippet": "Such a mechanism shall ensure that all disputes arising out of the decisions of Company’s functionaries are heard and disposed of at least at the next higher level. (b) The Board of Directors shall also provide for periodical review of the compliance of the FPC",
+          "reference_notes": "The provision assigns the board responsibility for the mechanism, next-level review of disputes, and periodic FPC/grievance reviews."
+        }
+      ],
+      "strategies": [
+        {
+          "strategy": "fixed_size",
+          "collection": "policylens_fixed_size_bge_m3",
+          "gold_ranks": [
+            5
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_016_fixed_size_00001_3e76161d41b6",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.7201090965830894,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_016_fixed_size_00007_c0b5bc32280d",
+              "doc_id": "doc_016",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6267997344513301,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_001_fixed_size_00008_f643700e17c3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.562878060669393,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_001_fixed_size_00011_be30ce0d52cd",
+              "doc_id": "doc_001",
+              "page_start": 9,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5540770554816989,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_016_fixed_size_00005_92e15d19bd51",
+              "doc_id": "doc_016",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.553504430658996,
+              "gold_page_match": true
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_001_fixed_size_00001_aee405d33739",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5509224619571146,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_003_fixed_size_00002_8432983a1d35",
+              "doc_id": "doc_003",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5471185272823655,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_002_fixed_size_00005_65b6f505bfff",
+              "doc_id": "doc_002",
+              "page_start": 5,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5460135236637338,
+              "gold_page_match": false
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_017_fixed_size_00003_01c87f6190f2",
+              "doc_id": "doc_017",
+              "page_start": 2,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5442358776025057,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_016_fixed_size_00011_c9b767dbd0db",
+              "doc_id": "doc_016",
+              "page_start": 9,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5399634280146746,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_001_fixed_size_00012_9e002cf96917",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5325046416885831,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_003_fixed_size_00017_7d8573c40a2a",
+              "doc_id": "doc_003",
+              "page_start": 13,
+              "page_end": 14,
+              "page_provenance": [
+                {
+                  "page_number": 13,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 14,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5299589932380013,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_024_fixed_size_00005_23b340ab4a76",
+              "doc_id": "doc_024",
+              "page_start": 3,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5282335990411131,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_024_fixed_size_00002_15bb2fdc5f67",
+              "doc_id": "doc_024",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5251094638253205,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_036_fixed_size_00420_8b96129713d8",
+              "doc_id": "doc_036",
+              "page_start": 244,
+              "page_end": 244,
+              "page_provenance": [
+                {
+                  "page_number": 244,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.519398703897024,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_002_fixed_size_00001_0ce787c7f04d",
+              "doc_id": "doc_002",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5166578671247357,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_023_fixed_size_00006_3f707981865b",
+              "doc_id": "doc_023",
+              "page_start": 4,
+              "page_end": 6,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5165565324205029,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_007_fixed_size_00008_d871c86fcbad",
+              "doc_id": "doc_007",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5136281256370538,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_007_fixed_size_00099_96f0c624b712",
+              "doc_id": "doc_007",
+              "page_start": 61,
+              "page_end": 61,
+              "page_provenance": [
+                {
+                  "page_number": 61,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5114868207558023,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_009_fixed_size_00066_67dc026e0abb",
+              "doc_id": "doc_009",
+              "page_start": 40,
+              "page_end": 41,
+              "page_provenance": [
+                {
+                  "page_number": 40,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 41,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5081321560644299,
+              "gold_page_match": false
+            }
+          ]
+        },
+        {
+          "strategy": "structure_aware",
+          "collection": "policylens_structure_aware_bge_m3",
+          "gold_ranks": [
+            8
+          ],
+          "top20": [
+            {
+              "rank": 1,
+              "chunk_id": "doc_016_structure_aware_00001_465ed38df1ef",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 1,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.698481778080884,
+              "gold_page_match": false
+            },
+            {
+              "rank": 2,
+              "chunk_id": "doc_016_structure_aware_00008_8909da55ae52",
+              "doc_id": "doc_016",
+              "page_start": 6,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.6178030021880107,
+              "gold_page_match": false
+            },
+            {
+              "rank": 3,
+              "chunk_id": "doc_016_structure_aware_00002_1cf9097c9fc7",
+              "doc_id": "doc_016",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5689096615011258,
+              "gold_page_match": false
+            },
+            {
+              "rank": 4,
+              "chunk_id": "doc_003_structure_aware_00018_03fb79a24da9",
+              "doc_id": "doc_003",
+              "page_start": 13,
+              "page_end": 14,
+              "page_provenance": [
+                {
+                  "page_number": 13,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 14,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5575115655563241,
+              "gold_page_match": false
+            },
+            {
+              "rank": 5,
+              "chunk_id": "doc_001_structure_aware_00001_ac782e3816d0",
+              "doc_id": "doc_001",
+              "page_start": 1,
+              "page_end": 3,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 3,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5542286436829446,
+              "gold_page_match": false
+            },
+            {
+              "rank": 6,
+              "chunk_id": "doc_001_structure_aware_00011_6d21474d762a",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 10,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5454849733965982,
+              "gold_page_match": false
+            },
+            {
+              "rank": 7,
+              "chunk_id": "doc_003_structure_aware_00002_964c980ead5b",
+              "doc_id": "doc_003",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5453372676279201,
+              "gold_page_match": false
+            },
+            {
+              "rank": 8,
+              "chunk_id": "doc_016_structure_aware_00006_d4c341ea43e2",
+              "doc_id": "doc_016",
+              "page_start": 5,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5405078494902678,
+              "gold_page_match": true
+            },
+            {
+              "rank": 9,
+              "chunk_id": "doc_001_structure_aware_00008_bd57eceffcf3",
+              "doc_id": "doc_001",
+              "page_start": 7,
+              "page_end": 8,
+              "page_provenance": [
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": true,
+                  "review_reasons": [
+                    "ambiguous visible-hyphen line break preserved"
+                  ]
+                },
+                {
+                  "page_number": 8,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.540311691762034,
+              "gold_page_match": false
+            },
+            {
+              "rank": 10,
+              "chunk_id": "doc_002_structure_aware_00005_09f53cf3d4e9",
+              "doc_id": "doc_002",
+              "page_start": 5,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5250336676215324,
+              "gold_page_match": false
+            },
+            {
+              "rank": 11,
+              "chunk_id": "doc_001_structure_aware_00004_288632361e39",
+              "doc_id": "doc_001",
+              "page_start": 4,
+              "page_end": 5,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 5,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5244404416719972,
+              "gold_page_match": false
+            },
+            {
+              "rank": 12,
+              "chunk_id": "doc_024_structure_aware_00002_c7c2c87cf73a",
+              "doc_id": "doc_024",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5223667346417423,
+              "gold_page_match": false
+            },
+            {
+              "rank": 13,
+              "chunk_id": "doc_002_structure_aware_00001_88177c0a5460",
+              "doc_id": "doc_002",
+              "page_start": 1,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 1,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5190962640205983,
+              "gold_page_match": false
+            },
+            {
+              "rank": 14,
+              "chunk_id": "doc_026_structure_aware_00034_536837a0d449",
+              "doc_id": "doc_026",
+              "page_start": 38,
+              "page_end": 40,
+              "page_provenance": [
+                {
+                  "page_number": 38,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 39,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 40,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5102658396151738,
+              "gold_page_match": false
+            },
+            {
+              "rank": 15,
+              "chunk_id": "doc_001_structure_aware_00012_ec295e9f73ee",
+              "doc_id": "doc_001",
+              "page_start": 10,
+              "page_end": 11,
+              "page_provenance": [
+                {
+                  "page_number": 10,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 11,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5075934579254721,
+              "gold_page_match": false
+            },
+            {
+              "rank": 16,
+              "chunk_id": "doc_036_structure_aware_00267_5bd6324d5fcc",
+              "doc_id": "doc_036",
+              "page_start": 142,
+              "page_end": 142,
+              "page_provenance": [
+                {
+                  "page_number": 142,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5064231587724476,
+              "gold_page_match": false
+            },
+            {
+              "rank": 17,
+              "chunk_id": "doc_016_structure_aware_00011_44d37811de5b",
+              "doc_id": "doc_016",
+              "page_start": 9,
+              "page_end": 9,
+              "page_provenance": [
+                {
+                  "page_number": 9,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5058957956145778,
+              "gold_page_match": false
+            },
+            {
+              "rank": 18,
+              "chunk_id": "doc_024_structure_aware_00005_ad192a5e6e82",
+              "doc_id": "doc_024",
+              "page_start": 4,
+              "page_end": 4,
+              "page_provenance": [
+                {
+                  "page_number": 4,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.5054149789602704,
+              "gold_page_match": false
+            },
+            {
+              "rank": 19,
+              "chunk_id": "doc_023_structure_aware_00008_213ecc370674",
+              "doc_id": "doc_023",
+              "page_start": 6,
+              "page_end": 7,
+              "page_provenance": [
+                {
+                  "page_number": 6,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                },
+                {
+                  "page_number": 7,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.49959442075208826,
+              "gold_page_match": false
+            },
+            {
+              "rank": 20,
+              "chunk_id": "doc_017_structure_aware_00003_d48a51798b10",
+              "doc_id": "doc_017",
+              "page_start": 2,
+              "page_end": 2,
+              "page_provenance": [
+                {
+                  "page_number": 2,
+                  "text_source": "native",
+                  "cleaning_review": false,
+                  "review_reasons": []
+                }
+              ],
+              "score": 0.49933495728225424,
+              "gold_page_match": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
